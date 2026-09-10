@@ -5,11 +5,10 @@ const https = require('https');
 class KommoMCP {
   constructor() {
     this.apiKey = process.env.KOMMO_API_KEY;
-    this.subdomain = process.env.KOMMO_SUBDOMAIN;
-    this.integrationId = process.env.KOMMO_INTEGRATION_ID;
+this.subdomain = process.env.SUBDOMAIN;    this.integrationId = process.env.KOMMO_INTEGRATION_ID;
 
     if (!this.apiKey || !this.subdomain) {
-      throw new Error('KOMMO_API_KEY и KOMMO_SUBDOMAIN требуются в .env');
+      throw new Error('KOMMO_API_KEY и SUBDOMAIN требуются в .env');
     }
   }
 
