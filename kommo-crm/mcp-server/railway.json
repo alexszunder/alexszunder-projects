@@ -1,0 +1,8 @@
+{
+  "builder": "dockerfile",
+  "buildCommand": "npm ci --production",
+  "startCommand": "node server.js",
+  "healthcheckPath": "/health",
+  "healthcheckInterval": 30,
+  "replicas": 1
+}
